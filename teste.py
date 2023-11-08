@@ -7,5 +7,5 @@ navegador = webdriver.Firefox()
 
 navegador.get('https://web.whatsapp.com/')
 
-while len(navegador.find_element(By.CSS_SELECTOR, '._19vUU > canvas:nth-child(3)')) < 1:
+while len(navegador.find_element(By.TAG_NAME, '<canva>')) < 1:
     pass
